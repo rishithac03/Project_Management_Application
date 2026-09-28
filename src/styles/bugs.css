@@ -1,0 +1,517 @@
+/* =========================================
+   BUGS LAYOUT
+========================================= */
+
+.bugs-layout {
+    min-height: 100vh;
+    background: #f7f7f7;
+}
+
+.bugs-main {
+   margin-left: 240px;
+   min-height: 100vh;
+}
+
+.bugs-content {
+    padding: 30px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.bugs-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.bugs-header h2 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+    color: #111;
+}
+
+.bugs-header p {
+    margin: 6px 0 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.create-bug-button {
+    border: none;
+    background: #111;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.create-bug-button:hover {
+    background: #222;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.bugs-error {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    color: #c62828;
+    padding: 12px 14px;
+    border-radius: 7px;
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   FILTERS
+========================================= */
+
+.bugs-filters {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+
+.bug-search {
+    flex: 1;
+}
+
+.bug-search input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 38px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 12px;
+    font-size: 13px;
+    outline: none;
+}
+
+.bug-search input:focus {
+    border-color: #999;
+}
+
+.bug-filter select {
+    height: 38px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    padding: 0 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.clear-bug-filter {
+    height: 38px;
+    padding: 0 14px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.clear-bug-filter:hover {
+    background: #f5f5f5;
+}
+
+
+/* =========================================
+   COUNT
+========================================= */
+
+.bugs-count {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   KANBAN BOARD
+========================================= */
+
+.bug-kanban-board {
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+
+/* =========================================
+   KANBAN COLUMN
+========================================= */
+
+.bug-kanban-column {
+    background: #eeeeee;
+    border-radius: 7px;
+    padding:15px;
+    min-height: 500px;
+}
+
+
+/* =========================================
+   COLUMN HEADER
+========================================= */
+
+.bug-kanban-column-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:15px;
+}
+
+.bug-kanban-column-header h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #222;
+}
+
+.bug-kanban-column-header span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 25px;
+    height: 25px;
+
+    padding: 0 7px;
+
+    background: #fff;
+    border-radius: 5px;
+
+    font-size: 12px;
+    color: #555;
+}
+
+
+/* =========================================
+   COLUMN CONTENT
+========================================= */
+
+.bug-kanban-tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 12px;
+}
+
+
+/* =========================================
+   EMPTY COLUMN
+========================================= */
+
+.empty-bug-column {
+    padding: 35px 10px;
+
+    text-align: center;
+
+    color: #999;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   BUG CARD
+========================================= */
+
+.bug-card {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 7px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.bug-card:hover {
+    border-color: #ccc;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.bug-card-content {
+    padding: 14px;
+    cursor: pointer;
+}
+
+.bug-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+    margin-bottom: 10px;
+}
+
+.bug-id {
+    font-size: 11px;
+    font-weight: 700;
+    color: #777;
+}
+
+.bug-priority {
+    font-size: 10px;
+    font-weight: 600;
+
+    padding: 4px 7px;
+
+    border-radius: 4px;
+
+    background: #f1f1f1;
+    color: #555;
+}
+
+.bug-priority-high {
+    background: #f5e5e5;
+    color: #a33;
+}
+
+.bug-priority-medium {
+    background: #f5f0df;
+    color: #947500;
+}
+
+.bug-priority-low {
+    background: #e7f1e7;
+    color: #467346;
+}
+
+
+.bug-card h3 {
+    margin: 0 0 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #222;
+
+    line-height: 1.4;
+}
+
+.bug-card-content p {
+    margin: 0 0 12px;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: #777;
+
+    display: -webkit-box;
+    /* -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; */
+    overflow: hidden;
+}
+
+
+/* =========================================
+   CARD META
+========================================= */
+
+.bug-card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    padding-top: 10px;
+
+    border-top: 1px solid #eee;
+
+    font-size: 11px;
+    color: #777;
+}
+
+
+/* =========================================
+   CARD FOOTER
+========================================= */
+
+.bug-card-footer {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 10px 12px;
+
+    border-top: 1px solid #eee;
+
+    background: #fafafa;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.bug-status {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 5px 8px;
+
+    border-radius: 4px;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.bug-status-open {
+    background: #f1f1f1;
+    color: #555;
+}
+
+.bug-status-in-progress {
+    background: #eee8d7;
+    color: #806d25;
+}
+
+.bug-status-resolved {
+    background: #e5f0e5;
+    color: #477347;
+}
+
+.bug-status-closed {
+    background: #e8e8e8;
+    color: #555;
+}
+
+
+/* =========================================
+   DEVELOPER STATUS BUTTON
+========================================= */
+
+.bug-status-button {
+    border: none;
+
+    background: #111;
+    color: #fff;
+
+    padding: 6px 10px;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.bug-status-button:hover {
+    background: #333;
+}
+
+
+/* =========================================
+   ADMIN ACTIONS
+========================================= */
+
+.bug-actions {
+    display: flex;
+    gap: 6px;
+    margin-left: auto;
+}
+
+.bug-actions button {
+    border: 1px solid #ddd;
+
+    background: #fff;
+
+    padding: 5px 8px;
+
+    border-radius: 4px;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+.bug-actions button:hover {
+    background: #f1f1f1;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.bugs-loading {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f7f7f7;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .bug-kanban-board {
+        grid-template-columns:
+            repeat(2, minmax(250px, 1fr));
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .bugs-content {
+        padding: 18px;
+    }
+
+    .bugs-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .bugs-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .bug-search {
+        width: 100%;
+    }
+
+    .bug-filter select {
+        width: 100%;
+    }
+
+    .bug-kanban-board {
+        grid-template-columns: 1fr;
+    }
+
+}

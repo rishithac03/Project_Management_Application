@@ -1,0 +1,444 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "email": "admin1@gmail.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Rishitha",
+      "email": "developer1@gmail.com",
+      "password": "developer123",
+      "role": "developer"
+    },
+    {
+      "id": 3,
+      "name": "Sarah",
+      "email": "developer2@gmail.com",
+      "password": "developer456",
+      "role": "developer"
+    }
+  ],
+  "workspaces": [
+    {
+      "id": 1,
+      "name": "Website Development",
+      "description": "Main workspace for website development.",
+      "createdBy": 1
+    },
+    {
+      "id": 2,
+      "name": "Mobile Application",
+      "description": "Workspace for mobile application development.",
+      "createdBy": 1
+    },
+    {
+      "name": "Technex",
+      "description": "Taskflow website",
+      "createdBy": 1,
+      "id": 3
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "workspaceId": 1,
+      "name": "TaskFlow Website",
+      "description": "Project management web application",
+      "createdBy": 1
+    },
+    {
+      "id": 2,
+      "workspaceId": 1,
+      "name": "Company Website",
+      "description": "Corporate website project",
+      "createdBy": 1
+    },
+    {
+      "id": 3,
+      "workspaceId": 2,
+      "name": "TaskFlow Mobile",
+      "description": "Mobile version of TaskFlow",
+      "createdBy": 1
+    },
+    {
+      "workspaceId": 3,
+      "name": "Project management application",
+      "description": "Project management web application development.",
+      "createdBy": 1,
+      "id": 4
+    }
+  ],
+  "boards": [],
+  "tasks": [
+    {
+      "id": 1,
+      "projectId": 1,
+      "title": "Create Login Page",
+      "description": "Design and develop the login page",
+      "assignedTo": 2,
+      "status": "completed",
+      "priority": "high",
+      "label": "Frontend",
+      "deadline": "2026-08-25"
+    },
+    {
+      "id": 2,
+      "projectId": 1,
+      "title": "Create Dashboard",
+      "description": "Develop the main dashboard",
+      "assignedTo": 2,
+      "status": "completed",
+      "priority": "high",
+      "label": "Frontend",
+      "deadline": "2026-08-28"
+    },
+    {
+      "id": 3,
+      "projectId": 1,
+      "title": "Create API Integration",
+      "description": "Connect frontend with APIs",
+      "assignedTo": 3,
+      "status": "completed",
+      "priority": "medium",
+      "label": "Backend",
+      "deadline": "2026-08-30"
+    },
+    {
+      "id": 4,
+      "projectId": 2,
+      "title": "Design Home Page",
+      "description": "Create responsive home page",
+      "assignedTo": 3,
+      "status": "completed",
+      "priority": "low",
+      "label": "Design",
+      "deadline": "2026-08-22"
+    },
+    {
+      "projectId": 1,
+      "title": "Admin dashboard creation",
+      "description": "Create an admin dashboard and work on UI",
+      "assignedTo": 2,
+      "status": "completed",
+      "priority": "medium",
+      "label": "Frontend",
+      "deadline": "2026-08-29",
+      "id": 5
+    },
+    {
+      "projectId": 4,
+      "title": "task 1",
+      "description": "admin dashboard, developer dashboard, workspaces, projects, tasks, and CRUD operations.",
+      "assignedTo": 2,
+      "status": "completed",
+      "priority": "high",
+      "label": "Frontend",
+      "deadline": "2026-08-20",
+      "id": 6
+    },
+    {
+      "projectId": 4,
+      "title": "Add calender to the dashboards",
+      "description": "Create a calendar that shows overall monthly deadlines and overall task deadlines.",
+      "assignedTo": 3,
+      "status": "completed",
+      "priority": "high",
+      "label": "Frontend",
+      "deadline": "2026-08-21",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "taskId": 1,
+      "userId": 2,
+      "comment": "I have started working on the login page.",
+      "createdAt": "2026-08-18T10:00:00"
+    },
+    {
+      "id": 2,
+      "taskId": 2,
+      "userId": 2,
+      "comment": "Dashboard UI is almost completed.",
+      "createdAt": "2026-08-19T12:00:00"
+    },
+    {
+      "id": 1,
+      "taskId": 1,
+      "userId": 3,
+      "userName": "sahana",
+      "text": "I have started working on this task.",
+      "createdAt": "2026-08-20T09:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "taskId": 1,
+      "userId": 1,
+      "userName": "Admin",
+      "text": "Please complete this before the deadline.",
+      "createdAt": "2026-08-20T10:00:00.000Z"
+    },
+    {
+      "taskId": 1,
+      "userId": 1,
+      "userName": "Admin",
+      "text": "Good work on completing the task before the deadline.",
+      "createdAt": "2026-08-24T06:08:16.252Z",
+      "id": 3
+    },
+    {
+      "taskId": 1,
+      "userId": 2,
+      "userName": "Rishitha",
+      "text": "Thankyou sir.",
+      "createdAt": "2026-08-24T06:08:48.493Z",
+      "id": 4
+    }
+  ],
+  "bugs": [
+    {
+      "title": "Login validation issue",
+      "description": "Email password validation is not working.",
+      "taskId": 1,
+      "projectId": 1,
+      "priority": "high",
+      "status": "resolved",
+      "createdBy": 1,
+      "createdAt": "2026-08-24T08:19:14.374Z",
+      "id": 1
+    },
+    {
+      "title": "login page issues",
+      "description": "Login button not working.",
+      "taskId": 1,
+      "projectId": 1,
+      "priority": "high",
+      "status": "resolved",
+      "createdBy": 1,
+      "createdAt": "2026-08-24T09:05:33.428Z",
+      "id": 2
+    },
+    {
+      "title": "notifications not working",
+      "description": "Notifications are not coming",
+      "taskId": 7,
+      "projectId": 4,
+      "priority": "medium",
+      "status": "resolved",
+      "createdBy": 1,
+      "createdAt": "2026-08-24T10:17:21.037Z",
+      "id": 3
+    }
+  ],
+  "bugComments": [
+    {
+      "bugId": 1,
+      "userId": 2,
+      "userName": "Rishitha",
+      "text": "Working on it.",
+      "createdAt": "2026-08-24T08:20:26.207Z",
+      "id": 1
+    },
+    {
+      "bugId": 1,
+      "userId": 2,
+      "userName": "Rishitha",
+      "text": "Correct the validations. Please check it.",
+      "createdAt": "2026-08-24T08:23:08.469Z",
+      "id": 2
+    },
+    {
+      "bugId": 3,
+      "userId": 1,
+      "userName": "Admin",
+      "text": "complete this ASAP",
+      "createdAt": "2026-08-24T10:48:14.180Z",
+      "id": 3
+    }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "userId": 2,
+      "type": "task-assigned",
+      "title": "New Task Assigned",
+      "message": "You have been assigned the task Create Login Page",
+      "taskId": 1,
+      "read": true,
+      "createdAt": "2026-08-21T14:00:00"
+    },
+    {
+      "userId": 3,
+      "type": "task-assigned",
+      "title": "New Task Assigned",
+      "message": "You have been assigned the task \"Add calender to the dashboards\"",
+      "taskId": 7,
+      "read": true,
+      "createdAt": "2026-08-21T09:41:05.870Z",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "type": "task-status-changed",
+      "title": "Task Status Updated",
+      "message": "Rishitha changed \"Create Dashboard\" from In Progress to Completed.",
+      "taskId": 2,
+      "read": true,
+      "createdAt": "2026-08-24T05:46:56.695Z",
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "type": "comment-added",
+      "title": "New Comment",
+      "message": "Admin commented on \"Create Login Page\".",
+      "taskId": 1,
+      "read": true,
+      "createdAt": "2026-08-24T06:08:16.299Z",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "type": "comment-added",
+      "title": "New Comment",
+      "message": "Rishitha commented on \"Create Login Page\".",
+      "taskId": 1,
+      "read": true,
+      "createdAt": "2026-08-24T06:08:48.536Z",
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "type": "bug-created",
+      "title": "New Bug Created",
+      "message": "Admin created a bug for \"Create Login Page\".",
+      "bugId": 1,
+      "taskId": 1,
+      "read": true,
+      "createdAt": "2026-08-24T08:19:14.576Z",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "type": "bug-status-changed",
+      "title": "Bug Status Updated",
+      "message": "Rishitha changed bug \"Login validation issue\" from Open to In Progress.",
+      "bugId": 1,
+      "taskId": 1,
+      "read": true,
+      "createdAt": "2026-08-24T08:20:15.652Z",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "type": "bug-comment",
+      "title": "New Bug Comment",
+      "message": "Rishitha commented on bug \"Login validation issue\".",
+      "bugId": 1,
+      "taskId": 1,
+      "read": true,
+      "createdAt": "2026-08-24T08:20:26.248Z",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "type": "bug-status-changed",
+      "title": "Bug Status Updated",
+      "message": "Rishitha changed bug \"Login validation issue\" from In Progress to Open.",
+      "bugId": 1,
+      "taskId": 1,
+      "read": true,
+      "createdAt": "2026-08-24T08:22:35.188Z",
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "type": "bug-status-changed",
+      "title": "Bug Status Updated",
+      "message": "Rishitha changed bug \"Login validation issue\" from Open to Resolved.",
+      "bugId": 1,
+      "taskId": 1,
+      "read": true,
+      "createdAt": "2026-08-24T08:22:37.563Z",
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "type": "bug-comment",
+      "title": "New Bug Comment",
+      "message": "Rishitha commented on bug \"Login validation issue\".",
+      "bugId": 1,
+      "taskId": 1,
+      "read": true,
+      "createdAt": "2026-08-24T08:23:08.496Z",
+      "id": 11
+    },
+    {
+      "userId": 2,
+      "type": "bug-created",
+      "title": "New Bug Created",
+      "message": "Admin created a bug for \"Create Login Page\".",
+      "bugId": 2,
+      "taskId": 1,
+      "read": true,
+      "createdAt": "2026-08-24T09:05:33.477Z",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "type": "bug-status-changed",
+      "title": "Bug Status Updated",
+      "message": "Rishitha changed \"login page issues\" from Open to In Progress.",
+      "bugId": 2,
+      "read": true,
+      "createdAt": "2026-08-24T09:34:29.221Z",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "type": "bug-status-changed",
+      "title": "Bug Status Updated",
+      "message": "Rishitha changed \"login page issues\" from In Progress to Resolved.",
+      "bugId": 2,
+      "read": true,
+      "createdAt": "2026-08-24T10:15:36.993Z",
+      "id": 14
+    },
+    {
+      "userId": 3,
+      "type": "bug-created",
+      "title": "New Bug Created",
+      "message": "Admin created a bug for \"Add calender to the dashboards\".",
+      "bugId": 3,
+      "taskId": 7,
+      "read": true,
+      "createdAt": "2026-08-24T10:17:21.078Z",
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "type": "bug-status-changed",
+      "title": "Bug Status Updated",
+      "message": "Sarah changed \"notifications not working\" from Open to In Progress.",
+      "bugId": 3,
+      "read": true,
+      "createdAt": "2026-08-24T10:45:24.231Z",
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "type": "bug-status-changed",
+      "title": "Bug Status Updated",
+      "message": "Sarah changed \"notifications not working\" from In Progress to Resolved.",
+      "bugId": 3,
+      "read": true,
+      "createdAt": "2026-08-24T12:11:16.143Z",
+      "id": 17
+    }
+  ]
+}

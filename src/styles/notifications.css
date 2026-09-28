@@ -1,0 +1,196 @@
+.notifications-layout {
+    min-height: 100vh;
+    background: #f7f7f7;
+}
+
+.notifications-main {
+    margin-left: 240px;
+    min-height: 100vh;
+}
+
+.notifications-content {
+    padding: 30px;
+}
+
+.notifications-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.notifications-header h2 {
+    margin: 0 0 6px;
+
+    color: #111;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.notifications-header p {
+    margin: 0;
+
+    color: #777;
+    font-size: 13px;
+}
+
+.notifications-header button {
+    padding: 9px 14px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    background: #fff;
+
+    color: #222;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.notifications-header button:hover {
+    background: #111;
+    color: #fff;
+}
+
+
+/* LIST */
+
+.notifications-list {
+    background: #fff;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+
+/* ITEM */
+
+.notification-page-item {
+    position: relative;
+
+    padding: 18px 20px;
+
+    border-bottom: 1px solid #eee;
+
+    cursor: pointer;
+
+    transition: background 0.15s;
+}
+
+.notification-page-item:last-child {
+    border-bottom: none;
+}
+
+.notification-page-item:hover {
+    background: #fafafa;
+}
+
+.notification-unread {
+    background: #f7f7f7;
+}
+
+.notification-page-item h3 {
+    margin: 0 0 6px;
+
+    color: #111;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.notification-page-item p {
+    margin: 0 0 8px;
+
+    color: #666;
+
+    font-size: 12px;
+}
+
+.notification-page-item span {
+    color: #999;
+
+    font-size: 10px;
+}
+
+
+/* DOT */
+
+.notification-page-dot {
+    position: absolute;
+
+    top: 22px;
+    right: 20px;
+
+    width: 7px;
+    height: 7px;
+
+    background: #111;
+
+    border-radius: 50%;
+}
+
+
+/* EMPTY */
+
+.notifications-empty {
+    padding: 70px 20px;
+
+    text-align: center;
+}
+
+.notifications-empty h3 {
+    margin: 0 0 8px;
+
+    color: #222;
+
+    font-size: 16px;
+}
+
+.notifications-empty p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 12px;
+}
+
+
+/* LOADING */
+
+.notifications-loading {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f7f7f7;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+
+@media (max-width: 700px) {
+
+    .notifications-main {
+        margin-left: 0;
+    }
+
+    .notifications-content {
+        padding: 15px;
+    }
+
+    .notifications-header {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+}

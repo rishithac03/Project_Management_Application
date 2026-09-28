@@ -1,0 +1,267 @@
+.workspace-layout {
+    min-height: 100vh;
+    background: #f7f7f7;
+}
+
+.workspace-main {
+    margin-left: 240px;
+    min-height: 100vh;
+}
+
+.workspace-content {
+    padding: 30px;
+}
+
+.workspace-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.workspace-header h2 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.workspace-header p {
+    color: #666;
+    font-size: 14px;
+}
+
+.add-workspace-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-workspace-btn:hover {
+    background: #333;
+}
+
+
+/* ERROR */
+
+.workspace-error {
+    background: #f5f5f5;
+    border: 1px solid #999;
+    color: #000;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+/* FORM */
+
+.workspace-form-container {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.workspace-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.workspace-form-header h3 {
+    font-size: 18px;
+}
+
+.workspace-form-header button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.workspace-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #000;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.workspace-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.cancel-btn,
+.save-btn {
+    padding: 9px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.save-btn {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+
+/* WORKSPACE CARDS */
+
+.workspace-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.workspace-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 22px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.workspace-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.workspace-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.workspace-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.workspace-actions button {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 7px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.workspace-actions button:hover {
+    background: #f3f3f3;
+}
+
+.workspace-empty {
+    background: #fff;
+    border: 1px dashed #ccc;
+    border-radius: 7px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.workspace-empty p {
+    color: #777;
+    margin-top: 8px;
+}
+
+.workspace-loading {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.workspace-card-content {
+    cursor: pointer;
+}
+
+.workspace-card-content:hover h3 {
+    text-decoration: underline;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    .workspace-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .workspace-main {
+        margin-left: 200px;
+    }
+
+    .workspace-content {
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .workspace-main {
+        margin-left: 0;
+    }
+
+    .workspace-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .workspace-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

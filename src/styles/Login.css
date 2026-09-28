@@ -1,0 +1,143 @@
+.login-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f5f5f5;
+    padding:20px;
+}
+
+.login-card{
+    width:100%;
+    max-width:420px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:40px;
+}
+
+.login-header{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.login-header h1{
+    font-size:32px;
+    color:#111;
+    margin-bottom:8px;
+}
+
+.login-header p{
+    color:#666;
+    font-size:15px;
+}
+
+.login-form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.form-group label{
+    font-size:14px;
+    font-weight:600;
+}
+
+.form-group input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.form-group input:focus{
+    border-color:#000;
+}
+
+.password-box{
+    position:relative;
+}
+
+.password-box input{
+    padding-right:45px;
+}
+
+.eye-btn{
+    position:absolute;
+    top:50%;
+    right:12px;
+    transform:translateY(-50%);
+    background:none;
+    border:none;
+    cursor:pointer;
+    font-size:18px;
+    color:#555;
+}
+
+.login-options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.remember{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:14px;
+}
+
+.forgot-btn{
+    border:none;
+    background:none;
+    cursor:pointer;
+    color:#000;
+    font-size:14px;
+}
+
+.forgot-btn:hover{
+    text-decoration:underline;
+}
+
+.login-btn{
+    padding:13px;
+    background:#000;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#222;
+}
+
+.error{
+    color:red;
+    font-size:13px;
+}
+.login-error{
+
+    color:red;
+
+    font-size:14px;
+
+    margin-top:-10px;
+
+}
+
+@media(max-width:480px){
+
+    .login-card{
+        padding:30px 20px;
+    }
+
+}

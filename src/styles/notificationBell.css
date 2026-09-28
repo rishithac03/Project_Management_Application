@@ -1,0 +1,271 @@
+/* =========================================
+   WRAPPER
+========================================= */
+
+.notification-wrapper {
+    position: relative;
+}
+
+
+/* =========================================
+   BELL BUTTON
+========================================= */
+
+.notification-button {
+    position: relative;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    background: #fff;
+
+    cursor: pointer;
+}
+
+.notification-button:hover {
+    background: #f5f5f5;
+}
+
+.notification-icon {
+    font-size: 16px;
+}
+
+
+/* =========================================
+   COUNT
+========================================= */
+
+.notification-count {
+    position: absolute;
+
+    top: -5px;
+    right: -5px;
+
+    min-width: 17px;
+    height: 17px;
+
+    padding: 0 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #111;
+    color: #fff;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   DROPDOWN
+========================================= */
+
+.notification-dropdown {
+    position: absolute;
+
+    top: 48px;
+    right: 0;
+
+    width: 350px;
+
+    background: #fff;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.12);
+
+    z-index: 1000;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.notification-header {
+    height: 55px;
+
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #eee;
+}
+
+.notification-header h3 {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #111;
+}
+
+.notification-header button {
+    border: none;
+
+    background: transparent;
+
+    color: #555;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+.notification-header button:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   LIST
+========================================= */
+
+.notification-list {
+    max-height: 400px;
+
+    overflow-y: auto;
+}
+
+
+/* =========================================
+   ITEM
+========================================= */
+
+.notification-item {
+    position: relative;
+
+    display: flex;
+
+    padding: 13px 15px;
+
+    border-bottom: 1px solid #eee;
+
+    cursor: pointer;
+
+    transition: background 0.15s;
+}
+
+.notification-item:hover {
+    background: #f7f7f7;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   UNREAD
+========================================= */
+
+.notification-item.unread {
+    background: #fafafa;
+}
+
+.notification-content {
+    flex: 1;
+
+    padding-right: 10px;
+}
+
+.notification-content strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #111;
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.notification-content p {
+    margin: 0 0 5px;
+
+    color: #666;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+.notification-content span {
+    color: #999;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   UNREAD DOT
+========================================= */
+
+.unread-dot {
+    width: 7px;
+    height: 7px;
+
+    margin-top: 5px;
+
+    background: #111;
+
+    border-radius: 50%;
+}
+
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.no-notifications {
+    padding: 45px 20px;
+
+    text-align: center;
+}
+
+.no-notifications p {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .notification-dropdown {
+        position: fixed;
+
+        top: 65px;
+        right: 10px;
+        left: 10px;
+
+        width: auto;
+    }
+
+}
